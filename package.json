@@ -1,0 +1,23 @@
+{
+  "name": "portifa-do-juliao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julio-cesar96/portifa-do-juliao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julio-cesar96/portifa-do-juliao/issues"
+  },
+  "homepage": "https://github.com/julio-cesar96/portifa-do-juliao#readme",
+  "dependencies": {
+    "sass": "^1.81.0"
+  }
+}
