@@ -1,0 +1,10 @@
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
+
+.container {
+    @include flexbox(row, stretch);
+    background-color: $primary-color;
+    width: 200px;
+    height: 200px;
+}
