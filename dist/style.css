@@ -55,3 +55,42 @@ body {
   width: 200px;
   height: 200px;
 }
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.container-button button {
+  height: 80px;
+  width: 120px;
+  color: #fff;
+  background-color: blue;
+  border-radius: 4px;
+}
+.container-button .semTransicao:hover {
+  background-color: green;
+}
+.container-button .comTransicao {
+  transition: background-color 0.3s ease;
+}
+.container-button .comTransicao:hover {
+  background-color: green;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.container-button .comAnimacao:hover {
+  animation: slide-in 0.3s linear;
+}
+.container-button .animacaoLinear:hover {
+  background-color: green;
+  animation: bounce 1s linear;
+}

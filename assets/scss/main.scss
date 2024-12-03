@@ -1,10 +1,53 @@
-@import 'base/reset';
-@import 'base/variables';
-@import 'base/mixins';
+@use 'base/reset';
+@use 'base/variables';
+@use 'base/mixins';
 
 .container {
-    @include flexbox(row, stretch);
-    background-color: $primary-color;
+    @include mixins.flexbox(row, stretch);
+    background-color: variables.$primary-color;
     width: 200px;
     height: 200px;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+
+    button {
+        height: 80px;
+        width: 120px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+    }
+
+    .semTransicao {
+        &:hover {
+            background-color: green;
+        }
+    }
+
+    .comTransicao {
+        transition: background-color 0.3s ease;
+        &:hover {
+            background-color: green;
+        }
+    }
+
+    .comAnimacao {
+        &:hover {
+            @include mixins.slide-in(0.3s);
+        }
+    }
+
+    .animacaoLinear {
+        &:hover {
+            background-color: green;
+            animation: bounce 1s linear;
+        }
+    }
 }

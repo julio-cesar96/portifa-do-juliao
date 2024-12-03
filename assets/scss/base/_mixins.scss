@@ -9,3 +9,18 @@
     justify-content: $justify-center;
     align-items: $align-center;
 }
+
+@mixin slide-in($duration) {
+    @keyframes slide-in {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    & {
+        animation: slide-in $duration linear;
+    }
+}
